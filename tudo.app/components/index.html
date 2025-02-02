@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="flex items-center justify-between bg-pink-800 text-[white] p-4 ">
+        <div class="text-2xl">Anuj Jadon ToDo !</div>
+        <div class="flex text-[white] text-large gap-6">
+            <div>Sign In</div>
+            <div>Ragister</div>
+        </div>
+    </header>
+
+    <div class="text-center mt-8 mb-5">
+        <h1 class="greeting font-bold text-4xl">GOOD MORNING!</h1>
+        
+        <P class="text-[gray] mt-3">WELCOM TO YOUR PERSONAL TO-DO LIST! ORGANIZE YOUR TASKS, STAY PRODOCTIVE, AND ACCOMLISHYOUR GOSLS. </P>
+    </div>
+
+    <hr>
+
+    <div class="text-center mt-7">
+        <h1 class="font-bold text-4xl mb-3">TODAY</h1>
+        <input type="text" name="text" class="w-200 h-11 border-1  solid gray pl-2" placeholder="enter task">
+        <button type="button" class=" p-2 border-2 border-orange-500 rounded bg-orange-200 cursor-pointer text-lg">
+            Add
+        </button>
+    </div>
+
+    <div class="flex justify-center gap-2 mt-6">
+        <button type="submit" class=" p-2 border-2 border-orange-500 rounded bg-orange-200 cursor-pointer text-sm ">
+          Show Completed Tasks
+        </button>
+        <button type="submit" class=" p-2 border-2 border-orange-500 rounded bg-orange-200 cursor-pointer text-sm ">
+          Show Pending Tasks
+        </button>
+        <button type="submit" class=" p-2 border-2 border-orange-500 rounded bg-orange-200 cursor-pointer text-sm ">
+          Clear All
+        </button>
+      </div>
+</body>
+</html>
