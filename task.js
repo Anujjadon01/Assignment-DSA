@@ -302,7 +302,7 @@
 //         if(a%2===0){
 //             return false;
 //         }
-        
+
 //     }
 //     return true
 // }
@@ -314,7 +314,7 @@
 //     let stre="";
 //     for (let i = ar.length-1; i>=0; i--) {
 //         stre+=ar[i]
-        
+
 //     }
 //     return stre
 // }
@@ -334,7 +334,7 @@
 //     let sum=0;
 //     for (let i = 0; i < arr.length; i++) {
 //         sum+=arr[i];
-        
+
 //     }
 //     return sum;
 // }
@@ -356,5 +356,96 @@
 //     return true; 
 // }
 // console.log(isPalindrome("mam")); 
+
+
+
+
+
+// Date 13 february........................
+
+// Q=1
+// function p(arr1,arr2){
+//     let a=[...arr1,...arr2];
+//     return a;
+// }
+// let arr1=[1,2,3,4];
+// let arr2=[5,6,7]
+// console.log(p(arr1,arr2));
+
+// q=2
+
+// const person = { name: "Alice", age: 25 };
+// function p(person){
+//     let a={...person,age:30};
+//     return a;
+// }
+// console.log(p(person));
+
+// Q=3
+
+// function p(...arr) {
+//     let sum = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         sum+=arr[i];        
+//     }
+//     return sum;
+
+// }
+// console.log(p(5, 10, 15, 20));
+
+// Q=4
+
+// const numbers = [1, 2, 3, 4, 5, 6];
+// let [A,B,...c]=numbers;
+// console.log((`first = ${A} second = ${B} rest = [${c}]`));
+
+
+// Q=5
+
+// const obj1 = { a: 1, b: 2 };
+// const obj2 = { c: 3, d: 4 };
+// let a={...obj1,...obj2}
+// console.log(a);
+
+// Q=6
+
+// const user = { id: 101, name: "John", role: "Admin" }
+// function p(user){
+//     let {role,...p}=user;
+//     return p
+// }
+// console.log(p(user));
+
+
+// Q=7
+
+// const numbers = [45, 78, 12, 89, 23];
+// function p(numbers){
+//    let max=Math.max(...numbers);
+//     return max;
+// }
+// console.log(p(numbers));
+
+
+// Q=8
+
+// function greet(firstName, ...messages) {
+//        console.log(`"${firstName}:${messages.join(", ")}"`);
+//     }
+
+// greet("Alice", "Hello", "Good Morning", "How are you?");
+
+// Q=9
+
+// let a="apple";
+// let b="Banana";
+// [a,b]=[...[b,a]];
+// console.log(`a = ${a}, b = ${b}`);
+
+
+// Q=10
+
+// const nestedArr = [1, [2, 3], [4, 5, [6, 7]]];
+// console.log([...nestedArr].flat(2));
 
 
