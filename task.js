@@ -286,3 +286,75 @@
 
 
 
+
+
+
+
+
+// date 12..........................
+
+// Q=1
+// function prim(a){
+//     if(a<2){
+//         return false;
+//     }
+//     for (let i = 2; i < a; i++) {
+//         if(a%2===0){
+//             return false;
+//         }
+        
+//     }
+//     return true
+// }
+// console.log(prim(59));
+
+// Q=2
+// function st(a){
+//     let ar=a.split("")
+//     let stre="";
+//     for (let i = ar.length-1; i>=0; i--) {
+//         stre+=ar[i]
+        
+//     }
+//     return stre
+// }
+// console.log(st("anuj"));
+
+// Q=3
+// function fe(a){
+//     if(a===0||a===1){
+//         return 1;
+//     }
+//     return a*fe(a-1);
+// }
+// console.log(fe(5));
+
+// Q=4
+// function add(arr){
+//     let sum=0;
+//     for (let i = 0; i < arr.length; i++) {
+//         sum+=arr[i];
+        
+//     }
+//     return sum;
+// }
+// let arr=[1,2,3]
+// console.log(add(arr));
+
+// Q=5
+// function isPalindrome(str) {
+//     let i = 0;
+//     let b = str.length - 1;
+
+//     while (i < b) {
+//         if (str[i] !== str[b]) {
+//             return false; 
+//         }
+//         i++;
+//         b--;
+//     }
+//     return true; 
+// }
+// console.log(isPalindrome("mam")); 
+
+
