@@ -2,7 +2,7 @@
 
 // let arr=[1,2,3,4,5,6];
 // for (let i = arr.length-1; i >=0 ; i--) {
-//     console.log(arr[i]);  
+//     console.log(arr[i]);
 // }
 
 // Q=2
@@ -52,7 +52,7 @@
 //     for (let j = i; j < arr5.length; j++) {
 //         if(arr5[i]>arr5[j]){
 //             count++;
-//             console.log([arr5[i],arr5[j]]); 
+//             console.log([arr5[i],arr5[j]]);
 //         }
 
 //     }
@@ -93,7 +93,7 @@
 //         obj[srt1[i]]+=1;
 //     }else{
 //         obj[srt1[i]]=1
-//     } 
+//     }
 // }
 // console.log(obj);
 
@@ -270,9 +270,9 @@
 // let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 // function isPrime(num) {
-//     if (num <= 1) return false; 
+//     if (num <= 1) return false;
 //     for (let i = 2; i <= Math.sqrt(num); i++) {
-//         if (num % i === 0) return false; 
+//         if (num % i === 0) return false;
 //     }
 //     return true;
 // }
@@ -348,14 +348,14 @@
 
 //     while (i < b) {
 //         if (str[i] !== str[b]) {
-//             return false; 
+//             return false;
 //         }
 //         i++;
 //         b--;
 //     }
-//     return true; 
+//     return true;
 // }
-// console.log(isPalindrome("mam")); 
+// console.log(isPalindrome("mam"));
 
 
 
@@ -386,7 +386,7 @@
 // function p(...arr) {
 //     let sum = 0;
 //     for (let i = 0; i < arr.length; i++) {
-//         sum+=arr[i];        
+//         sum+=arr[i];
 //     }
 //     return sum;
 
@@ -448,4 +448,84 @@
 // const nestedArr = [1, [2, 3], [4, 5, [6, 7]]];
 // console.log([...nestedArr].flat(2));
 
+
+
+// Date..................15
+
+// Q=1
+// const smallest=(array,k)=>{
+//     for (let i = 0; i < array.length; i++) {
+//     for (let j = array.length-1; j>i; j--) {
+//     if (array[j]>array[j-1]) {
+//     [array[j],array[j-1]]=[array[j-1],array[j]]
+//     }
+//     }
+//     }
+//     return array[k-1]
+//     }
+// const arr = [[3, 5, 1], [12, 7, 9], [14, 10, 4]];
+// let array=arr.flat(2);
+//     const k=3
+//     console.log(smallest(array,k))
+
+// Q=2
+// const arr = [1, 2, 4,5,6,7];
+// function che(arr,n){
+//     let p=(n * (n + 1)) / 2
+//     let sum=arr.reduce((ele,e)=>ele+e);
+//     let c=p-sum;
+//     return c;
+// }
+
+// console.log(che(arr,7));
+
+
+// Q=3
+
+
+// function concatenateArrays(arr1,arr2){
+//     let a=[...arr1,...arr2];
+//     return a;
+// }
+// const arr1 = [1, 2, 3];
+// const arr2 = [4, 5, 6];
+// console.log(concatenateArrays(arr1,arr2));
+
+// Q=4
+
+// const str = "JavaScript is great and JavaScript is fun!";
+// let newstr = str.split(" ");
+// let obj={}
+
+// function words(newstr) {
+//     for (let i = 0; i < newstr.length; i++) {
+//         if (obj[newstr[i]]) {
+//            console.log(newstr[i])
+//            break;
+//         }else{
+//             obj[newstr[i]]=1
+//         }
+        
+//         }
+
+// }
+
+// words(newstr)
+
+
+// Q=5
+
+// const arr = [2, 7, 11, 15];
+
+// function sum(arr,tar) {
+//     for (let i = 0; i < arr.length; i++) {
+//         for (let j = i; j < arr.length; j++) {
+//             if (arr[i]+arr[j]==tar) {
+//                 console.log([i,j]);   
+//             }
+//         }
+//     }
+// }
+
+// sum(arr,9)
 
