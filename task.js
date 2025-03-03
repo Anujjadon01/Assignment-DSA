@@ -505,7 +505,7 @@
 //         }else{
 //             obj[newstr[i]]=1
 //         }    
-        
+
 //         }
 
 // }
@@ -535,12 +535,12 @@
 //     for (let i = 0; i < newstr.length; i++) {
 //         if (i===0) {
 //            console.log(newstr[i])
-           
+
 //         }else if(i===newstr.length-1){
 //            console.log(newstr[i])
-            
+
 //         }    
-        
+
 //         }
 
 // }
@@ -559,7 +559,7 @@
 //         res.push(arr[i])
 //     }
 //     console.log(res);
-    
+
 // }
 
 // a(arr)
@@ -580,7 +580,7 @@
 //         }
 //     }
 //     console.log(max,min);
-    
+
 // }
 
 // maxx(arr)
@@ -598,7 +598,7 @@
 //     }
 
 //     console.log(arr[k-1]);
-    
+
 // }
 
 // kthmax(arr)
@@ -616,7 +616,7 @@
 //         }
 //     }
 //     console.log(arr);
-    
+
 // }
 
 // move(arr)
@@ -640,7 +640,7 @@
 //     }
 
 //     console.log(a0,a1,a3);
-    
+
 
 //     for (let j = 0; j < arr.length; j++) {
 //         if (a0>0) {
@@ -670,7 +670,7 @@
 //         max=Math.max(min,max)
 //     }
 //     console.log(max);
-    
+
 // }
 // findsub(arr)
 
@@ -686,7 +686,7 @@
 //         }
 //     }
 //     console.log(res);
-    
+
 // }
 
 // duplicate(arr)
@@ -730,7 +730,7 @@
 //         }
 //     }
 //     console.log(res,count);
-    
+
 // }
 
 // repeat(arr)
@@ -747,7 +747,7 @@
 //      pro=Math.max(profit,pro)
 //     }
 //     console.log(pro);
-    
+
 // }
 
 // buysell(arr)
@@ -763,7 +763,7 @@
 //         for (let j = i; j < arr.length; j++) {
 //             if (arr[i]+arr[j]==k) {
 //                 console.log(arr[i],arr[j]);
-                
+
 //             }
 //         }
 //     }
@@ -799,7 +799,7 @@
 //     }
 // }
 //     console.log(max);
-    
+
 // }
 // findsub(arr)
 
@@ -814,7 +814,7 @@
 //         max=Math.max(min,max)
 //     }
 //     console.log(max);
-    
+
 // }
 // findsub(arr)
 
@@ -830,7 +830,7 @@
 //         max=Math.max(min,max)
 //     }
 //     console.log(max);
-    
+
 // }
 // findsub(arr)
 
@@ -859,7 +859,7 @@
 //         }
 //     }
 //     console.log(res);
-    
+
 // }
 
 // removedup(arr)
@@ -914,9 +914,9 @@
 //     for (const key in obj) {
 //         arr.push(key,obj[key])
 //     }
-    
+
 //     console.log(arr.join(""));
-    
+
 //  }
 
 //  findOccuring(str1)
@@ -939,11 +939,11 @@
 //     for (const key in obj) {
 //         if (obj[key]!==2) {
 //             console.log(key);
-            
+
 //         }
 //     }
-    
-    
+
+
 //  }
 
 //  findOccuring(str1)
@@ -994,7 +994,7 @@
 //     for (const key in obj) {
 //         if (obj[key]>1) {
 //             console.log(key);
-            
+
 //         }
 //     }
 
@@ -1013,7 +1013,7 @@
 //         for (let j = i; j < arr.length; j++) {
 //             if (arr[i]+arr[j]==target) {
 //                 console.log([i,j]);
-                
+
 //             }
 //         }
 //     }
@@ -1055,3 +1055,336 @@
 
 //    } 
 // maxlength()
+
+
+
+
+// linked list................
+
+// Q=1
+
+// class node {
+//     constructor(data) {
+//         this.data = data
+//         this.next = null
+//     }
+// }
+// let a = new node(1)
+// let b = new node(2)
+// let c = new node(3)
+// let temp = new node(4)
+// a.next = b
+// b.next = c
+// let head = a;
+// let current = head;
+// function firstadd() {
+//     temp.next = current
+//     current = temp
+//     while (current != null) {
+//         console.log(current.data);
+//         current = current.next
+//     }
+// } 
+// firstadd()
+
+
+// Q=2
+
+// class node {
+//     constructor(data) {
+//         this.data = data
+//         this.next = null
+//     }
+// }
+// let a = new node(1)
+// let b = new node(2)
+// let c = new node(3)
+// let temp = new node(4)
+// a.next = b
+// b.next = c
+// let head = a;
+// let current = head;
+// function Lastadd() {
+
+//     while (current != null) {
+//         console.log(current.data);
+//         current = current.next
+//     }
+//     temp.next = current
+//     current = temp
+
+//     while (current != null) {
+//         console.log(current.data);
+//         current = current.next
+//     }
+// } 
+// Lastadd()
+
+// Q=3
+
+// class node {
+//     constructor(data) {
+//         this.data = data
+//         this.next = null
+//     }
+// }
+// let a = new node(1)
+// let b = new node(2)
+// let c = new node(3)
+// let d = new node(4)
+// let e=new node(5)
+// a.next = b
+// b.next = c
+// c.next=d
+// d.next=e
+// let head = a;
+// let current = head;
+// function Lastadd(current,tl,position) {
+//     while (current!= null && current.data!=position) {
+//         console.log(current.data);
+//         current = current.next
+//     }
+// tl.next=current
+//     current=tl
+//     head=current
+//     while(current!=null){
+//         console.log(current.data);
+//         current = current.next
+//     }
+
+// } 
+// Lastadd(current,new node(10),3)
+
+
+// Q=4.............
+
+// class node {
+//     constructor(data) {
+//         this.data = data
+//         this.next = null
+//     }
+// }
+// let a = new node(1)
+// let b = new node(2)
+// let c = new node(3)
+// let d = new node(4)
+// let e=new node(5)
+// let tl=new node(20)
+// a.next = b
+// b.next = c
+// c.next=d
+// d.next=e
+// let head = a;
+// let current = head;
+// function Lastadd() {
+//     if(current!=null){
+//         current=current.next
+//     }
+//    while(current!=null){
+//     console.log(current.data);
+//     current=current.next
+//    }
+
+// } 
+// Lastadd()
+
+
+// Q=5.............
+
+// class node{
+//     constructor(data){                                    
+//         this.data=data
+//         this.next=null
+//     }
+//     }
+    
+//     let a=new node(1)
+//     let b=new node(2)
+//     let c=new node(3)
+//     let d=new node(4)
+//     let temp=new node(10)
+    
+//     a.next=b
+//     b.next=c
+//     c.next=d
+    
+//     let head=a
+//     let current= head
+    
+
+//     function removeend(current,temp) {
+
+// while (current.next.next!=null) {
+//     console.log(current.data);
+//     current=current.next
+// }
+// current.next=null
+// head=current
+
+//     while (current !==null) {
+//         console.log(current.data);
+//         current=current.next
+//     }
+
+// }
+
+
+// removeend(current,temp)
+
+
+
+
+// Q=6
+
+// class node{
+//     constructor(data){                         
+//         this.data=data
+//         this.next=null
+//     }
+//     }
+    
+//     let a=new node(1)
+//     let b=new node(2)
+//     let c=new node(3)
+//     let d=new node(4)
+//     let temp=new node(10)
+    
+//     a.next=b
+//     b.next=c
+//     c.next=d
+//     let n=2
+//     let head=a
+//     let current= head
+    
+//     function removekth(current,n) {
+        
+    
+
+//  while (current.next.next!==null && current.data!==n ) {
+//     console.log(current.data);
+//     current=current.next
+    
+//  }
+
+//  current=current.next
+    
+//     while (current !==null) {
+//         console.log(current.data);
+//         current=current.next
+//     }
+
+
+//     }
+
+//     removekth(current,n)
+
+
+
+// Q=7
+
+
+
+// class node{
+//     constructor(data){                                 
+//         this.data=data
+//         this.next=null
+//     }
+//     }
+    
+//     let a=new node(1)
+//     let b=new node(2)
+//     let c=new node(3)
+//     let d=new node(4)
+//     let temp=new node(10)
+    
+//     a.next=b
+//     b.next=c
+//     c.next=d
+    
+//     let head=a
+//     let current= head
+    
+    
+//     while (current !==null) {
+//         console.log(current.data);
+//         current=current.next
+//     }
+
+
+// Q=8
+
+// class node{
+//     constructor(data){                                          
+//         this.data=data
+//         this.next=null
+//     }
+//     }
+    
+//     let a=new node(1)
+//     let b=new node(2)
+//     let c=new node(3)
+//     let d=new node(4)
+//     let temp=new node(10)
+    
+//     a.next=b
+//     b.next=c
+//     c.next=d
+    
+//     let head=a
+//     let current= head
+
+//     function search(current,value) {
+//         let position=0
+//         while (current!==null) {
+//             if (current.data==value) {
+//                 console.log("value=",value,"position=",position);
+                
+//             }
+//             current=current.next
+//             position++
+//         }
+//     }
+
+//     search(current,2)
+
+
+
+// Q=10
+
+// class node{
+//     constructor(data){                      
+//         this.data=data
+//         this.next=null
+//     }
+//     }
+    
+//     let a=new node(1)
+//     let b=new node(2)
+//     let c=new node(3)
+//     let d=new node(4)
+    
+//     a.next=b
+//     b.next=c
+//     c.next=d
+    
+//     let head=a
+//     let current= head
+
+
+//     function revrselist(current) {
+        
+//     let arr=[]
+    
+//     while (current !==null) {
+//         arr.push(current.data)
+//         current=current.next
+//     }
+
+// while (arr.length>0) {
+//     console.log(arr.pop());
+    
+// }
+
+//     }
+
+//     revrselist(current)
