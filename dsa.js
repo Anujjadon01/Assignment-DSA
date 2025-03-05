@@ -18,7 +18,7 @@
 
 // let head=a
 // let current=head
-// let count=0
+// let count=0;
 
 // while (current!==null) {
 //     count++;
@@ -30,14 +30,17 @@
 
 // current=head
 
-// for (let i = 0; i < res; i++) {
+// let i=0;
+// while(i<res){
 //     current=current.next
+//     i++
 // }
 
+// // for (let i = 0; i < res; i++) {
+// //     current=current.next
+// // }
+
 // console.log(current.data);
-
-
-
 
 
 
@@ -74,3 +77,98 @@
 // console.log(arr[i]);
 // }
 
+
+////date................4 march
+
+////Q=2
+
+// class Node {
+//     constructor(data) {
+//         this.data = data;
+//         this.next = null;
+//     }
+// }
+
+// function removeNthFromEnd(head, n) {
+//     let dummy = new Node(0);
+//     dummy.next = head;
+//     let first = dummy;
+//     let second = dummy;
+
+   
+//     for (let i = 0; i <= n; i++) {
+//         if (first !== null) first = first.next;
+//     }
+
+    
+//     while (first !== null) {
+//         first = first.next;
+//         second = second.next;
+//     }
+
+ 
+//     second.next = second.next.next;
+
+//     return dummy.next;
+// }
+
+
+// function printList(head) {
+//     let current = head;
+//     while (current !== null) {
+//         console.log(current.data);
+//         current = current.next;
+//     }
+// }
+
+
+// let head = new Node(1);
+// head.next = new Node(2);
+// head.next.next = new Node(3);
+// head.next.next.next = new Node(4);
+// head.next.next.next.next = new Node(5);
+
+// let n = 2; 
+
+// head = removeNthFromEnd(head, n);
+
+// printList(head);
+
+
+
+
+////Q=1
+
+// class ListNode {
+//     constructor(val = 0, next = null) {
+//         this.val = val;
+//         this.next = next;
+//     }
+// }
+
+// function mergeTwoLists(l1, l2) {
+//     if (!l1) return l2;
+//     if (!l2) return l1;
+    
+//     if (l1.val < l2.val) {
+//         l1.next = mergeTwoLists(l1.next, l2);
+//         return l1;
+//     } else {
+//         l2.next = mergeTwoLists(l1, l2.next);
+//         return l2;
+//     }
+// }
+
+// function printList(head) {
+//     let result = [];
+//     while (head) {
+//         result.push(head.val);
+//         head = head.next;
+//     }
+//     console.log(result.join(" -> "));
+// }
+
+// let l1 = new ListNode(1, new ListNode(3, new ListNode(5)));
+// let l2 = new ListNode(2, new ListNode(4, new ListNode(6)));
+// let mergedHead = mergeTwoLists(l1, l2);
+// printList(mergedHead);
